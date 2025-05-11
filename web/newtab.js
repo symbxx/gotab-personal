@@ -1,0 +1,1 @@
+import{d as s,s as o,R as t,j as e}from"./assets/main-RpejCBsR.js";import a from"./assets/myErrorPage-I7XINhjE.js";import{M as r}from"./assets/main-Bz7X3OC0.js";s.locale("zh-cn"),o(!1),t.createRoot(document.getElementById("root")).render(window.location.protocol.includes("http")?e.jsx(a,{}):e.jsx(r,{type:"ext"}));

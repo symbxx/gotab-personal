@@ -1,0 +1,1 @@
+import{d as s,s as a,R as e,j as o}from"./assets/main-RpejCBsR.js";import{S as t,a as m}from"./assets/sortable.esm-A-yo8kyn.js";import{M as r}from"./assets/main-Bz7X3OC0.js";s.locale("zh-cn"),a(!1),t.mount(new m),e.createRoot(document.getElementById("root")).render(o.jsx(r,{}));
