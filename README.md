@@ -31,10 +31,9 @@ Gotab 新标签页是 funtabs 新标签页的重构版本，由于之前的版�
 
 > **页面预览**
 
-![20250511193208.jpg](https://img.picui.cn/free/2025/05/11/68208c8456bf7.jpg)
-![20250511193251.jpg](https://img.picui.cn/free/2025/05/11/68208c845b860.jpg)
-![20250511193312.jpg](https://img.picui.cn/free/2025/05/11/68208c8422230.jpg)
-
+![20250511193208](https://github.com/user-attachments/assets/9e9d7ce4-e63f-4ec6-a319-b3afb538fe83)
+![20250511193251](https://github.com/user-attachments/assets/a6bc5871-80d5-412c-9b65-6345e563d5df)
+![20250511193312](https://github.com/user-attachments/assets/a1b34288-b356-44b1-8789-3736db4eaa2e)
 
 > **功能特性**
 
@@ -88,5 +87,9 @@ GoTab新标签页是funtabs新标签页的全新升级版本，是您打造个�
 
 > **捐赠支持**
 
-[![alipay.jpg](https://i.postimg.cc/66GM99Cw/alipay.jpg)](https://postimg.cc/ThfV0vkH)
-[![wxpay.jpg](https://i.postimg.cc/vT9hXzGD/wxpay.jpg)](https://postimg.cc/rRV5w50L)
+![wxpay](https://github.com/user-attachments/assets/7c379a17-475d-432f-944e-292f39e0e0ba)
+![alipay](https://github.com/user-attachments/assets/e3681a43-aec3-4601-a1dd-272c83145e85)
+![WechatIMG27](https://github.com/user-attachments/assets/3423b752-efbd-4fb4-b330-402276d645d1)
+
+
+
