@@ -70,7 +70,7 @@ demo 地址：[https://test.gotab.cn](https://test.gotab.cn)
 
 - 访问 ip+端口打开页面，首次将跳转到/install 安装引导页面，按要求输入内容即可
 
-<img src="https://github.com/user-attachments/assets/da3d38dd-53e3-4685-9c4a-334dcf3f74b2" width="400" alt="1panel示例">
+![image](https://github.com/user-attachments/assets/de93184b-dc22-4aee-a98c-8316f5dcfef3)
 
 ### 4. 宝塔示例
 
