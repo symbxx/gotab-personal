@@ -1,0 +1,1 @@
+import{e as t,x as n,j as o}from"./main-Drts11_7.js";import e from"./markdownContent-BxMl083b.js";const s=t.memo((function(t){const s=n.c(2),{content:m}=t;let r;return s[0]!==m?(r=o.jsx(e,{content:m}),s[0]=m,s[1]=r):r=s[1],r}));export{s as default};
