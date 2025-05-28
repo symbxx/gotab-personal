@@ -3,5 +3,6 @@ globalThis.siteConfig = {
     title: ``,
     server_url: ``,
     about_us: ``,
-    donate: ``
+    donate: ``,
+    cardPush: ``
 }
