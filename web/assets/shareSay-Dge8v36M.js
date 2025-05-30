@@ -1,1 +1,0 @@
-import{e as t,x as o,j as e}from"./requestIdleCallbackPolyfill-DVdtTnyH.js";import n from"./markdownContent-B0W8wkgT.js";const s=t.memo((function(t){const s=o.c(2),{content:r}=t;let a;return s[0]!==r?(a=e.jsx(n,{content:r}),s[0]=r,s[1]=a):a=s[1],a}));export{s as default};
