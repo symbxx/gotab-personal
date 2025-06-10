@@ -1,1 +1,1 @@
-import{d as s,s as o,R as e,j as t,M as a}from"./assets/requestIdleCallbackPolyfill-wjnfvn2_.js";import r from"./assets/myErrorPage-DF30_g0H.js";s.locale("zh-cn"),o(!1),e.createRoot(document.body).render(window.location.protocol.includes("http")?t.jsx(r,{}):t.jsx(a,{type:"ext"}));
+import{d as s,s as o,R as e,j as t,M as a}from"./assets/requestIdleCallbackPolyfill-MO-SmkoS.js";import r from"./assets/myErrorPage-DMxH5_tp.js";s.locale("zh-cn"),o(!1),e.createRoot(document.body).render(window.location.protocol.includes("http")?t.jsx(r,{}):t.jsx(a,{type:"ext"}));
