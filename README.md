@@ -36,11 +36,8 @@ demo 地址：[https://test.gotab.cn](https://test.gotab.cn)
 docker run -d \
   --name gotab-server \
   -p 8080:8080 \
-  -v $(pwd)/data:/app \
   -e SERVER_PORT=8080 \
-  --restart unless-stopped \
-  doxwant/gotab:latest \
-  ./gotab-server -port=8080
+  doxwant/gotab:latest
 ```
 
 ## 使用说明
