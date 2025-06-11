@@ -1,30 +1,47 @@
 # Gotab 新标签页私有化部署
 
-> **特点**
+### 特点
 
 免费、清爽、功能齐全、可配置项多！
 
-> **项目简介**
+### 项目简介
 
 Gotab 新标签页是 funtabs 新标签页的重构版本，由于之前的版本是刚自学之后的第一版，传参都是一层一层的写，后期接触到 redux，发觉已经改不动了，而且感觉大家更喜欢 itab,wetab 中的某些功能，但是做起来由于没有规划，已经是相当难受，所以重构了一下，本项目前端使用 Vite 脚手架构建，后端使用 golang 编写，得益于 golang 的特性，后端程序仅一个二进制文件。用于打造个性化浏览器新标签页、起始页、个人主页。
 
-> **官网**
+### 项目地址
+
+[https://github.com/dengxiwang/gotab-personal](https://github.com/dengxiwang/gotab-personal)
+
+### 官网
 
 [https://www.gotab.cn](https://www.gotab.cn)
 
-> **在线预览**
+### 在线预览
 
 demo 地址：[https://test.gotab.cn](https://test.gotab.cn)
 
 用户名：admin，密码：123456
 
-> **准备工作**
+### 准备工作
 
 ☁️ 服务器（没有云服务器或者需要购买云服务器的可以看下我的推广：[雨云服务器](https://www.rainyun.com/gotab_)，感谢您的支持）
 
-> **用户帮助**
+### 用户帮助
 
 有任何问题，欢迎加群反馈交流，比较及时：QQ 群 727809499
+
+## docker 部署
+
+```
+docker run -d \
+  --name gotab-server \
+  -p 8080:8080 \
+  -v $(pwd)/data:/app \
+  -e SERVER_PORT=8080 \
+  --restart unless-stopped \
+  doxwant/gotab:latest \
+  ./gotab-server -port=8080
+```
 
 ## 使用说明
 
