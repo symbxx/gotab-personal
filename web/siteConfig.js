@@ -4,5 +4,6 @@ globalThis.siteConfig = {
     server_url: ``,
     about_us: ``,
     donate: ``,
-    cardPush: ``
+    cardPush: ``,
+    offlineToUse: ``,
 }
