@@ -51,7 +51,7 @@ CMD ["sh", "-c", "echo Running server on port $SERVER_PORT && ./gotab-server -po
 
 # 第三步（多平台构建推送）：
 
-# VERSION=1.1.3
+# VERSION=1.1.4
 # docker buildx build \
 #     --platform linux/amd64,linux/arm64 \
 #     -t doxwant/gotab:${VERSION} \
