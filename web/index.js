@@ -1,1 +1,1 @@
-import{d as s,s as a,R as e,j as o,M as t}from"./assets/requestIdleCallbackPolyfill-BBqTMjVZ.js";import{S as l,a as r}from"./assets/sortable.esm-Bv0j-UjJ.js";s.locale("zh-cn"),a(!1),l.mount(new r),e.createRoot(document.body).render(o.jsx(t,{}));
+import{d as s,s as a,R as e,j as o,M as t}from"./assets/requestIdleCallbackPolyfill-D5UXfOWp.js";import{S as l,a as r}from"./assets/sortable.esm-Bv0j-UjJ.js";s.locale("zh-cn"),a(!1),l.mount(new r),e.createRoot(document.body).render(o.jsx(t,{}));
