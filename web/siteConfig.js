@@ -6,4 +6,6 @@ globalThis.siteConfig = {
     donate: ``,
     cardPush: ``,
     offlineToUse: ``,
+    sourceStoreFrom: ``,
+    homePageLimit: ``
 }
