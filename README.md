@@ -18,9 +18,7 @@ Gotab 新标签页是 funtabs 新标签页的重构版本，由于之前的版�
 
 ### 在线预览
 
-demo 地址：[https://test.gotab.cn](https://test.gotab.cn)
-
-用户名：admin，密码：123456
+demo 地址：[https://test.gotab.cn](https://test.gotab.cn)，用户名：admin，密码：123456
 
 ### 准备工作
 
@@ -39,6 +37,19 @@ docker run -d \
   -e SERVER_PORT=8080 \
   doxwant/gotab:latest
 ```
+
+docker 部署最好进行文件目录映射，这样更新后数据不会丢失，主要是三个：
+1、/uploads ，对应容器内的/app/uploads ，代表着用户上传的文件；
+2、/sourceStore ，对应容器内的/app/sourceStore，代表着资源库的图标文件；
+3、/config.toml，对应容器内的/app/config.toml，代表着程序的配置文件，如：mysql 设置、邮件服务器设置、网站标题等内容，请注意，这是一个单文件，而不是文件夹；
+
+## 注意事项
+
+（1）管理后台路径：管理员 - 我的 - 管理端，或者登陆后直接访问 /console 路径；
+
+（2）后台设置的一些功能性开关，对应着/web/siteConfig.js 文件，所以请不要缓存这个文件，以免配置更改了无法生效，其他需要注意缓存的文件为：html 结尾的，/index.js，/newtab.js，/popup.js，/background.js，以及/api/\*路径开头的；
+
+（3）数据是跟着用户走的，不登录的情况下默认的只是在本地进行缓存。数据分为两类，一类是默认主页数据（管理员可以在个人中心右上角编辑默认主页数据，也可以在管理后台的功能开关中调整默认主页数据策略），另一类是用户数据；
 
 ## 使用说明
 
