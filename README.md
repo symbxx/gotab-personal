@@ -18,7 +18,7 @@ demo 地址：[https://test.gotab.cn](https://test.gotab.cn)，用户名：admin
 
 ### 准备工作
 
-NAS终端或云服务器或其他设备（没有云服务器或者需要购买云服务器的可以看下我的推广：[雨云服务器](https://www.rainyun.com/gotab_)，感谢您的支持）
+NAS 终端或云服务器或其他设备（没有云服务器或者需要购买云服务器的可以看下我的推广：[雨云服务器](https://www.rainyun.com/gotab_)，感谢您的支持）
 
 ### 用户帮助
 
@@ -33,7 +33,7 @@ docker run -d \
   -e SERVER_PORT=8080 \
   -v $(pwd)/uploads:/app/uploads \
   -v $(pwd)/sourceStore:/app/sourceStore \
-  -v $(pwd)/config.toml:/app/config.toml \
+  --mount type=bind,source=$(pwd)/config.toml,target=/app/config.toml \
   --restart always \
   doxwant/gotab:latest
 ```
