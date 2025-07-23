@@ -22,10 +22,6 @@ WORKDIR /app
 COPY --from=builder /app/gotab-server .
 COPY --from=builder /app/web ./web/
 
-# 创建非 root 用户
-RUN adduser -D appuser && chown -R appuser /app
-USER appuser
-
 # 定义运行时环境变量
 ENV SERVER_PORT=8080
 EXPOSE ${SERVER_PORT}
