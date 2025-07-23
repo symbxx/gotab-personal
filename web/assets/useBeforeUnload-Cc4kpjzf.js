@@ -1,1 +1,0 @@
-import{r as e,aY as n,aZ as o}from"./requestIdleCallbackPolyfill-DEU4BPbw.js";var r=function(r,a){void 0===r&&(r=!0);var f=e.useCallback(function(e){if("function"!=typeof r||r())return e.preventDefault(),a},[r,a]);e.useEffect(function(){if(r)return n(window,"beforeunload",f),function(){return o(window,"beforeunload",f)}},[r,f])};export{r as u};
