@@ -1,1 +1,1 @@
-import{d as s,s as a,R as e,j as o,M as t}from"./assets/requestIdleCallbackPolyfill-CEimuL3I.js";import{S as l,a as r}from"./assets/sortable.esm-DnfOC_F4.js";s.locale("zh-cn"),a(!1),l.mount(new r),e.createRoot(document.body).render(o.jsx(t,{}));
+import{d as s,s as a,S as e,a as o,R as n,j as t,M as m}from"./assets/main-DoQmQ3rA.js";s.locale("zh-cn"),a(!1),e.mount(new o),n.createRoot(document.body).render(t.jsx(m,{}));

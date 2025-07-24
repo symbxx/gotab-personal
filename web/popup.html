@@ -12,43 +12,40 @@
     <script type="text/javascript" src="/hm.js" async></script>
     <script type="text/javascript" src="/siteConfig.js"></script>
   <script type="module" crossorigin src="/popup.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/requestIdleCallbackPolyfill-CEimuL3I.js">
-  <link rel="modulepreload" crossorigin href="/assets/myErrorPage-CLr4Hszv.js">
-  <link rel="modulepreload" crossorigin href="/assets/useForm-BmxkZ3hM.js">
-  <link rel="modulepreload" crossorigin href="/assets/getAllowClear-Cn6nd0XC.js">
-  <link rel="modulepreload" crossorigin href="/assets/TextArea-D12ZTmOp.js">
-  <link rel="modulepreload" crossorigin href="/assets/handleButton-FqbJIAiJ.js">
-  <link rel="modulepreload" crossorigin href="/assets/Overflow-CysMCa0X.js">
-  <link rel="modulepreload" crossorigin href="/assets/MailOutlined-OCY9FzYP.js">
-  <link rel="modulepreload" crossorigin href="/assets/LikeOutlined-BjYRMYG0.js">
-  <link rel="modulepreload" crossorigin href="/assets/FolderOpenOutlined-DHBkEw2_.js">
-  <link rel="modulepreload" crossorigin href="/assets/Input-BBAEOKR8.js">
-  <link rel="modulepreload" crossorigin href="/assets/SearchOutlined-C3PMWV9D.js">
-  <link rel="modulepreload" crossorigin href="/assets/myModal-DAb4Oxb9.js">
-  <link rel="modulepreload" crossorigin href="/assets/mediaQueryUtil-DPPPwwPM.js">
-  <link rel="modulepreload" crossorigin href="/assets/useBreakpoint-BCsgDtUx.js">
-  <link rel="modulepreload" crossorigin href="/assets/row-eYrfNDsp.js">
-  <link rel="modulepreload" crossorigin href="/assets/QuestionCircleOutlined-DSm95oJP.js">
-  <link rel="modulepreload" crossorigin href="/assets/index-CLs8asrc.js">
-  <link rel="modulepreload" crossorigin href="/assets/index-B6Nw0KJ3.js">
-  <link rel="modulepreload" crossorigin href="/assets/CloudUploadOutlined-BcBaKmgs.js">
-  <link rel="modulepreload" crossorigin href="/assets/PlusOutlined-ByZyTB3m.js">
-  <link rel="modulepreload" crossorigin href="/assets/index-BCD7T3lV.js">
-  <link rel="modulepreload" crossorigin href="/assets/fullSpin-CKQAqEpZ.js">
-  <link rel="modulepreload" crossorigin href="/assets/sortableJsUtils-lf51YuKZ.js">
-  <link rel="modulepreload" crossorigin href="/assets/assets-B8Bi78Vh.js">
-  <link rel="modulepreload" crossorigin href="/assets/StopOutlined-Br6dl6xU.js">
-  <link rel="modulepreload" crossorigin href="/assets/StopOutlined-BiZS3bI8.js">
-  <link rel="modulepreload" crossorigin href="/assets/index-we7dqPR7.js">
-  <link rel="modulepreload" crossorigin href="/assets/index-DG56vLGF.js">
-  <link rel="modulepreload" crossorigin href="/assets/QuestionCircleOutlined-Iab4W4Td.js">
+  <link rel="modulepreload" crossorigin href="/assets/main-DoQmQ3rA.js">
   <link rel="modulepreload" crossorigin href="/assets/RightSquareOutlined-CNc2yOfj.js">
-  <link rel="stylesheet" crossorigin href="/assets/requestIdleCallbackPolyfill-CmEo28um.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-BFqYArpd.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 
 <body style="width: 360px;height: 488px;">
     <div id="root"></div>
+    <script>
+        if (!window.requestIdleCallback) {
+            window.requestIdleCallback = function (callback, options) {
+                const userTimeout = options?.timeout;
+                const timeout = userTimeout ?? Infinity;
+                const startTime = Date.now();
+
+                const id = setTimeout(() => {
+                    const now = Date.now();
+                    const remaining = Math.max(0, timeout - (now - startTime));
+                    callback({
+                        timeRemaining: () => remaining,
+                        didTimeout: userTimeout != null && now - startTime >= userTimeout,
+                    });
+                }, 1);
+
+                return id;
+            };
+        }
+
+        if (!window.cancelIdleCallback) {
+            window.cancelIdleCallback = function (id) {
+                clearTimeout(id);
+            };
+        }
+    </script>
 </body>
 
 </html>
