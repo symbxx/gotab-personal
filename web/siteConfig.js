@@ -7,5 +7,8 @@ globalThis.siteConfig = {
     cardPush: ``,
     offlineToUse: ``,
     sourceStoreFrom: ``,
-    homePageLimit: ``
+    homePageLimit: ``,
+    loginBackground: ``,
+    loginBackgroundBlur: ``,
+    loginBackgroundBrightness: ``
 }
