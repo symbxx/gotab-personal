@@ -8,6 +8,7 @@ globalThis.siteConfig = {
     offlineToUse: ``,
     sourceStoreFrom: ``,
     homePageLimit: ``,
+    userRegister: ``,
     loginBackground: ``,
     loginBackgroundBlur: ``,
     loginBackgroundBrightness: ``
