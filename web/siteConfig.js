@@ -11,5 +11,7 @@ globalThis.siteConfig = {
     userRegister: ``,
     loginBackground: ``,
     loginBackgroundBlur: ``,
-    loginBackgroundBrightness: ``
+    loginBackgroundBrightness: ``,
+    uploadWallpaper: ``,
+    uploadWallpaperMaxSize: ``
 }
