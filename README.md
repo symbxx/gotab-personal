@@ -18,7 +18,7 @@ demo 地址：[https://test.gotab.cn](https://test.gotab.cn)，用户名：admin
 
 ### 准备工作
 
-NAS 终端或云服务器或其他设备（没有云服务器或者需要购买云服务器的可以看下我的推广：[雨云服务器](https://www.rainyun.com/gotab_)，感谢您的支持）
+NAS 终端或云服务器或其他设备（没有云服务器或者需要购买云服务器的可以看下我的推广：[雨云服务器](https://www.rainyun.com/gotab_)，感谢您的支持）、mysql 数据库（版本 8.0+ ，用于存储网站信息，并不包含网站配置，配置是程序运行时在根目录创建的 config.toml ）
 
 ### 用户帮助
 
