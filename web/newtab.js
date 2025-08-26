@@ -1,1 +1,1 @@
-import{d as s,s as a,S as o,a as t,R as e,j as n,b as c,M as d}from"./assets/main-BpZjJVsn.js";s.locale("zh-cn"),a(!1),o.mount(new t),e.createRoot(document.body).render(window.location.protocol.includes("http")?n.jsx(c,{}):n.jsx(d,{type:"ext"}));
+import{d as s,s as a,S as o,a as t,R as e,j as n,b as c,M as d}from"./assets/main-B2vHLlcE.js";s.locale("zh-cn"),a(!1),o.mount(new t),e.createRoot(document.body).render(window.location.protocol.includes("http")?n.jsx(c,{}):n.jsx(d,{type:"ext"}));
