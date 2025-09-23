@@ -10,40 +10,15 @@
     <script type="text/javascript" src="/siteConfig.js"></script>
     <script type="text/javascript" src="/hm.js" async></script>
     <script type="text/javascript" src="/changeFavicon.js" async></script>
-  <script type="module" crossorigin src="/assets/newtab-CGSqxpWC.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/main-DBCALU0b.js">
+  <script type="module" crossorigin src="/assets/newtab-D914NwW7.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-BWFVfKBs.js">
   <link rel="stylesheet" crossorigin href="/assets/main-BWWoXjjw.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 
 <body>
     <div id="root"></div>
-    <script>
-        if (!window.requestIdleCallback) {
-            window.requestIdleCallback = function (callback, options) {
-                const userTimeout = options?.timeout;
-                const timeout = userTimeout ?? Infinity;
-                const startTime = Date.now();
-
-                const id = setTimeout(() => {
-                    const now = Date.now();
-                    const remaining = Math.max(0, timeout - (now - startTime));
-                    callback({
-                        timeRemaining: () => remaining,
-                        didTimeout: userTimeout != null && now - startTime >= userTimeout,
-                    });
-                }, 1);
-
-                return id;
-            };
-        }
-
-        if (!window.cancelIdleCallback) {
-            window.cancelIdleCallback = function (id) {
-                clearTimeout(id);
-            };
-        }
-    </script>
+    <script type="text/javascript" src="/idleCallback.js"></script>
 </body>
 
 </html>
